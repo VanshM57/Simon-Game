@@ -1,0 +1,117 @@
+
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.3);
+}
+
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.2);
+}
+
+
+.btn-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-content: center;
+}
+
+
+.btn {
+    height: 180px;
+    width: 180px;
+    border-radius: 20%;
+    border: 8px solid white;
+    transition: all 0.2s ease-in-out;
+    margin: 10px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+
+.red {
+    background-color: #d95980;
+}
+.yellow {
+    background-color: #f99b45;
+}
+.green {
+    background-color: #63aac0;
+}
+.purple {
+    background-color: #819ff9;
+}
+
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+
+.flash {
+    background-color: white;
+    box-shadow: 0 0 20px white;
+}
+
+
+.userflash {
+    background-color: #3bf24d;
+    box-shadow: 0 0 20px #3bf24d;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .btn {
+        height: 140px;
+        width: 140px;
+        margin: 8px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        height: 120px;
+        width: 120px;
+        border: 6px solid white;
+    }
+}
